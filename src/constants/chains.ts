@@ -16,6 +16,9 @@ export enum SupportedChainId {
 
   POLYGON = 137,
   POLYGON_MUMBAI = 80001,
+
+  BSCSCAN = 56,
+  BSC_TESTNET = 97,
 }
 
 export const CHAIN_IDS_TO_NAMES = {
@@ -30,6 +33,8 @@ export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.ARBITRUM_RINKEBY]: 'arbitrum_rinkeby',
   [SupportedChainId.OPTIMISM]: 'optimism',
   [SupportedChainId.OPTIMISTIC_KOVAN]: 'optimistic_kovan',
+  [SupportedChainId.BSCSCAN]: 'Binance Smart Chain Mainnet',
+  [SupportedChainId.BSC_TESTNET]: 'Binance Smart Chain Testnet',
 }
 
 /**

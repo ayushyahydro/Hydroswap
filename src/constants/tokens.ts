@@ -81,6 +81,42 @@ export const USDC_POLYGON_MUMBAI = new Token(
   'USDC',
   'USD//C'
 )
+export const USDC_BSCSCAN = new Token(
+  SupportedChainId.BSCSCAN,
+  '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
+  6,
+  'USDC',
+  'USD//C'
+)
+export const USDC_BSC_TESTNET = new Token(
+  SupportedChainId.BSC_TESTNET,
+  '0x786Ba7a3B3229B0eD707aFf2731DFa4a4E6CB104',
+  6,
+  'USDC',
+  'USD//C'
+)
+
+export const HYDRO_MAINNET = new Token(
+  SupportedChainId.MAINNET,
+  '0x946112efab61c3636cbd52de2e1392d7a75a6f01',
+  18,
+  'HYDRO',
+  'HYDRO'
+)
+export const HYDRO_POLYGON = new Token(
+  SupportedChainId.POLYGON,
+  '0x946112efab61c3636cbd52de2e1392d7a75a6f01',
+  18,
+  'HYDRO',
+  'HYDRO'
+)
+export const HYDRO_POLYGON_MUMBAI = new Token(
+  SupportedChainId.POLYGON_MUMBAI,
+  '0x9477B2d4442FCd35368c029a0016e6800437BAe2',
+  18,
+  'HYDRO',
+  'HYDRO'
+)
 
 export const AMPL = new Token(
   SupportedChainId.MAINNET,
@@ -122,6 +158,8 @@ export const USDC: { [chainId in SupportedChainId]: Token } = {
   [SupportedChainId.RINKEBY]: USDC_RINKEBY,
   [SupportedChainId.KOVAN]: USDC_KOVAN,
   [SupportedChainId.ROPSTEN]: USDC_ROPSTEN,
+  [SupportedChainId.BSCSCAN]: USDC_BSCSCAN,
+  [SupportedChainId.BSC_TESTNET]: USDC_BSC_TESTNET,
 }
 export const DAI_POLYGON = new Token(
   SupportedChainId.POLYGON,
@@ -377,5 +415,10 @@ export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in SupportedCha
     [SupportedChainId.RINKEBY]: USDC_RINKEBY.address,
     [SupportedChainId.KOVAN]: USDC_KOVAN.address,
     [SupportedChainId.ROPSTEN]: USDC_ROPSTEN.address,
+  },
+  HYDRO: {
+    [SupportedChainId.MAINNET]: HYDRO_MAINNET.address,
+    [SupportedChainId.POLYGON]: HYDRO_POLYGON.address,
+    [SupportedChainId.POLYGON_MUMBAI]: HYDRO_POLYGON_MUMBAI.address,
   },
 }
