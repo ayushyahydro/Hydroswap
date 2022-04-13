@@ -117,6 +117,21 @@ export const HYDRO_POLYGON_MUMBAI = new Token(
   'HYDRO',
   'HYDRO'
 )
+export const HYDRO_BSCSCAN = new Token(
+  SupportedChainId.BSCSCAN,
+  '0xf3dbb49999b25c9d6641a9423c7ad84168d00071',
+  18,
+  'HYDRO',
+  'HYDRO'
+)
+//TODO: provide correct address for testnet
+export const HYDRO_BSC_TESTNET = new Token(
+  SupportedChainId.BSC_TESTNET,
+  '0xf3dbb49999b25c9d6641a9423c7ad84168d00071',
+  18,
+  'HYDRO',
+  'HYDRO'
+)
 
 export const AMPL = new Token(
   SupportedChainId.MAINNET,
